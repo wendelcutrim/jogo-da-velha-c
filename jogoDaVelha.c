@@ -4,7 +4,7 @@
 #include <time.h>
 #include <conio.h>
 //Wendel Cutrim
-/*Atualiza��es: Vers�o 1.0 - Cria��o do Game. Vers�o 1.2 - Altera��o das cores da fonte e background para 5F da biblioteca conio.h e corre��es do espa�amento entre o tabuleiro e texto*/
+/*Atualizações: Versão 1.0 - Criação do Game. Vers�o 1.2 - Alteração das cores da fonte e background para 5F da biblioteca conio.h e correções do espaçamento entre o tabuleiro e texto*/
 void tabuleiro(char casas2[9]){
     system("color 5F");
     system("cls");
@@ -52,7 +52,7 @@ int main(){
             do{
                 tabuleiro(casas);
                 if(jogada == 0){
-                        printf("\n");
+                    printf("\n");
                     printf("Wrong Movement, play again!\n");
                 }
                 printf("\n\n");
@@ -174,6 +174,6 @@ int main(){
         printf("Number of Draws: %i\n", emp);
         printf("Play again? <Y- Yes | N - No>\n");
         scanf("%s", &res);
-    }while(res == 's');
+    }while(res == 'y');
     return 0;
 }
